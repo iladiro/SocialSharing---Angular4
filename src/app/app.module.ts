@@ -5,20 +5,24 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BlockComponent } from './block/block.component';
-/*import { ButtonsGroupComponent } from './buttons-group/buttons-group.component';*/
+import { ButtonsGroupComponent } from './buttons-group/buttons-group.component';
+
+import { SocialService } from './socials.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BlockComponent
-    /*ButtonsGroupComponent*/
+    BlockComponent,
+    ButtonsGroupComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    SocialService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

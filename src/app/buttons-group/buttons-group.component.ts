@@ -11,7 +11,7 @@ import { SocialModel } from '../social-model';
 
 export class ButtonsGroupComponent {
 
-  @Input() buttonsGroup: SocialModel[];
+  @Input() buttonsGroup: SocialModel;
 
   constructor() { }
 

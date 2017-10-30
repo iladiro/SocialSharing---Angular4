@@ -1,16 +1,16 @@
-<ng-container *ngFor ="let currentElem of socials">
-  <div class="block block--{{currentElem.name | lowercase}}" *ngIf="currentElem.show">
+<ng-container *ngFor ="let social of socials">
+  <div class="block block--{{social.name | lowercase}}" *ngIf="social.show">
     <h2 class="block__socialName">
-      {{currentElem.name}}
+      {{social.name}}
     </h2>
     <div class="block__wrapper">
       <div class="linkGenerator center">
-        <input type="text" [(ngModel)]="currentElem.link" placeholder="Inserisci link">
+        <input type="text" [(ngModel)]="social.link" placeholder="Inserisci link">
         <hr>
         <button class="btn btn-default">Genera</button>
       </div>
       <div class="generatedLink">
-        <p>{{currentElem.link}}</p>
+        <p>{{social.link}}</p>
       </div>
     </div>
   </div>

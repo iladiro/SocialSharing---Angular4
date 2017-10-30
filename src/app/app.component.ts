@@ -1,42 +1,27 @@
-import { Component } from '@angular/core';
-//pippo
+import { Component, OnInit } from '@angular/core';
+import { SocialModel } from './social-model';
+import { SocialService } from './socials.service'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [SocialService]
 })
+
 export class AppComponent {
   title = 'Social Sharing';
 
-  myModel;
+  socialsList: SocialModel[];
 
-  //Inizializza il componente in modo tale che venga eseguito.
-  constructor() {
-    /*this.myModel = [
-      //tramite l'istruzione new viene chiamato il costrutto e gli vengono passati i parametri richiesti
-      new SocialModel('Facebook', true),
-      new SocialModel('Twitter'),
-      new SocialModel('Linkedin', true)
-    ]*/
+  constructor(private socialService: SocialService) {
+    this.socialsList = this.socialService.getSocial();
+  }
 
-    this.myModel = [
-      {
-        name: "Facebook",
-        link: "",
-        show: true
-      },
-      {
-        name: "Twitter",
-        link: "",
-        show: true
-      },
-      {
-        name: "Pinterest",
-        link: "",
-        show: false
-      }
-    ]
-  };
+  /*addSocial(social) {
+    this.socialService.addSocial(social);
+  }*/
+
+  /*ngOnInit(): {}*/
 
 }
