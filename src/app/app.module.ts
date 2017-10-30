@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { BlockComponent } from './block/block.component';
+/*import { ButtonsGroupComponent } from './buttons-group/buttons-group.component';*/
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BlockComponent
+    /*ButtonsGroupComponent*/
   ],
   imports: [
     BrowserModule,

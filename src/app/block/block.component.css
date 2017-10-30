@@ -1,0 +1,8 @@
+.block {
+  background-color: red;
+  padding: 15px;
+  margin-bottom: 20px;
+  &__socialName {
+    margin-top: 0;
+  }
+}
