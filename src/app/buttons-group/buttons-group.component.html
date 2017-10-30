@@ -1,5 +1,7 @@
 <ul class="socialButtons">
-  <li *ngFor="let button of buttonsGroup">
-    <button (click)="toggleBlock()">{{button.name}}</button>
+  <li *ngFor="let button of buttonsGroup; let i=index">
+    <button (click)="button.show = !button.show" class="{{button.name | lowercase}}">
+      {{button.name}}
+    </button>
   </li>
 </ul>

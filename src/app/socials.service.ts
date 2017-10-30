@@ -17,12 +17,17 @@ export class SocialService {
       {
         name: "Twitter",
         link: "",
-        show: true
+        show: false
       },
       {
         name: "Pinterest",
         link: "",
-        show: true
+        show: false
+      },
+      {
+        name: "Linkedin",
+        link: "",
+        show: false
       }
     ];
   };

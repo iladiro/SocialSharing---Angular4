@@ -16,17 +16,14 @@ export class ButtonsGroupComponent {
   constructor() { }
 
   //Inizializza il componente in modo tale che venga eseguito.
-  /*ngOnInit() {
-    this.socials = [
-      //tramite l'istruzione new viene chiamato il costrutto e gli vengono passati i parametri richiesti
-      new SocialModel('Facebook', true),
-      new SocialModel('Twitter'),
-      new SocialModel('Linkedin', true)
-    ]
+  /*ngOnInit() {}*/
+
+  /*toggleBlock(i):void {
+    console.log(i);
   }*/
 
-  /*toggleBlock():void {
-    console.log(SocialModel);
-  }*/
+  toggleBlock(index) {
+    console.log(this.buttonsGroup[index]);
+  };
 
 }
