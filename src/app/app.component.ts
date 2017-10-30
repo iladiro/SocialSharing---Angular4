@@ -15,7 +15,7 @@ export class AppComponent {
   socialsList: SocialModel[];
 
   constructor(private socialService: SocialService) {
-    this.socialsList = this.socialService.getSocial();
+    this.socialsList = socialService.getSocial();
   }
 
   /*addSocial(social) {

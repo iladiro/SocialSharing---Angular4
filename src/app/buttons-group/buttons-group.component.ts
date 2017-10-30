@@ -18,12 +18,4 @@ export class ButtonsGroupComponent {
   //Inizializza il componente in modo tale che venga eseguito.
   /*ngOnInit() {}*/
 
-  /*toggleBlock(i):void {
-    console.log(i);
-  }*/
-
-  toggleBlock(index) {
-    console.log(this.buttonsGroup[index]);
-  };
-
 }
