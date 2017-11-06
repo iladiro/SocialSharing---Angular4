@@ -5,4 +5,9 @@
   &__name {
     margin-top: 0;
   }
+  &__linkGenerator {
+    & > input {
+      width: 100%;
+    }
+  }
 }

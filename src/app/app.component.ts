@@ -18,10 +18,6 @@ export class AppComponent {
     this.socialsList = socialService.getSocial();
   }
 
-  /*addSocial(social) {
-    this.socialService.addSocial(social);
-  }*/
-
   /*ngOnInit(): {}*/
 
 }

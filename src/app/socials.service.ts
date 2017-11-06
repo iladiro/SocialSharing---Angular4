@@ -14,7 +14,7 @@ export class SocialService {
         show: true,
         linkGenerator: {
           link: "",
-          title: "",
+          title: null,
           description: null,
           image: null,
           socialPath: "http://www.facebook.com/share.php?u="
@@ -29,7 +29,6 @@ export class SocialService {
           description: "prova",
           image: null,
           socialPath: "http://twitter.com/share?text="
-          //socialPath: "http://twitter.com/share?text=" + this.description + "&url=" + this.link
         }
       },
       {

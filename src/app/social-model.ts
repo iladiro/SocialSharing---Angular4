@@ -15,12 +15,16 @@ export class SocialModel {
    this.name = name;
    this.show = show;
    this.linkGenerator = {
-     "link": "",
-     "title": "",
-     "description": "",
-     "image": "",
-     "socialPath": ""
+     link: "",
+     title: "",
+     description: "",
+     image: "",
+     socialPath: ""
    };
  };
+
+ // setSocialPath(linkValue: string) {
+ //   this.linkGenerator.socialPath += linkValue;
+ // };
 
 }
