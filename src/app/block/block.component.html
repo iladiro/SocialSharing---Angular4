@@ -5,10 +5,12 @@
         {{social.name}}
       </h2>
       <div class="socialBlock__linkGenerator center">
-        <input type="text" [(ngModel)]="social.link" placeholder="Inserisci link">
+        <input type="text" [(ngModel)]="social.linkGenerator.link" placeholder="Inserisci link">
       </div>
       <div class="socialBlock__generatedLink">
-        <p *ngIf="social.link.startsWith('http://')">{{social.socialPath}} {{social.link}}</p>
+        <p *ngIf="social.linkGenerator.link.startsWith('http://')">
+          {{social.linkGenerator.socialPath}}{{social.linkGenerator.link}}
+        </p>
       </div>
     </div>
     <div class="w-100"></div>
