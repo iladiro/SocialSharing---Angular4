@@ -1,6 +1,7 @@
 export class SocialModel {
   name: string;
   link: string;
+  socialPath: string;
   show: boolean;
 
   //il costruttore serve per costruire l'oggetto, per dargli una forma, utilizzando il modello (che è la classe).
@@ -8,6 +9,7 @@ export class SocialModel {
  constructor(name:string, show:boolean = false) {
    this.name = name;
    this.link = "";
+   this.socialPath = "";
    this.show = show;
  };
 

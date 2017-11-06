@@ -12,21 +12,25 @@ export class SocialService {
       {
         name: "Facebook",
         link: "",
+        socialPath: "http://www.facebook.com/share.php?u",
         show: true
       },
       {
         name: "Twitter",
         link: "",
+        socialPath: "",
         show: false
       },
       {
         name: "Pinterest",
         link: "",
+        socialPath: "",
         show: false
       },
       {
         name: "Linkedin",
         link: "",
+        socialPath: "",
         show: false
       }
     ];
