@@ -25,7 +25,7 @@ export class SocialService {
         show: false,
         linkGenerator: {
           link: "",
-          title: "prova",
+          title: null,
           description: "prova",
           image: null,
           socialPath: "http://twitter.com/share?text="
