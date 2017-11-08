@@ -8,9 +8,10 @@ export class SocialService {
   private socialsList: SocialModel[];
 
   constructor() {
+
     this.socialsList = [
       {
-        name: "Facebook",
+        name: "facebook",
         show: true,
         linkGenerator: {
           link: "",
@@ -21,36 +22,36 @@ export class SocialService {
         }
       },
       {
-        name: "Twitter",
+        name: "twitter",
         show: false,
         linkGenerator: {
           link: "",
           title: null,
-          description: "prova",
+          description: "",
           image: null,
           socialPath: "http://twitter.com/share?text="
         }
       },
       {
-        name: "Pinterest",
+        name: "pinterest",
         show: false,
         linkGenerator: {
           link: "",
           title: null,
-          description: "prova",
-          image: "prova",
-          socialPath: "http://www.facebook.com/share.php?u="
+          description: "",
+          image: "",
+          socialPath: "http://pinterest.com/pin/create/button/?url="
         }
       },
       {
-        name: "Linkedin",
+        name: "linkedin",
         show: false,
         linkGenerator: {
           link: "",
-          title: "prova",
-          description: "prova",
+          title: "",
+          description: "",
           image: null,
-          socialPath: "http://www.facebook.com/share.php?u="
+          socialPath: "http://www.linkedin.com/shareArticle?mini=true"
         }
       }
     ];

@@ -6,16 +6,16 @@
       </h2>
       <div class="socialBlock__linkGenerator center">
         <input type="text" [(ngModel)]="social.linkGenerator.link" placeholder="Inserisci link">
-        <input type="text" [(ngModel)]="social.linkGenerator.title" placeholder="Inserisci title" *ngIf="social.linkGenerator.title">
-        <input type="text" [(ngModel)]="social.linkGenerator.description" placeholder="Inserisci description" *ngIf="social.linkGenerator.description">
-        <input type="image" [(ngModel)]="social.linkGenerator.image" placeholder="Inserisci image" *ngIf="social.linkGenerator.image">
+        <input type="text" [(ngModel)]="social.linkGenerator.title" placeholder="Inserisci title" *ngIf="social.linkGenerator.title !== null">
+        <input type="text" [(ngModel)]="social.linkGenerator.description" placeholder="Inserisci description" *ngIf="social.linkGenerator.description !== null">
+        <input type="text" [(ngModel)]="social.linkGenerator.image" placeholder="Inserisci image" *ngIf="social.linkGenerator.image !== null">
       </div>
+      <button (click)="buildPath($event, social)">Click</button>
       <div class="socialBlock__generatedLink">
         <p *ngIf="social.linkGenerator.link.startsWith('http://')">
           {{social.linkGenerator.socialPath}}{{social.linkGenerator.link}}
         </p>
       </div>
     </div>
-    <div class="w-100"></div>
   </ng-container>
 </div>

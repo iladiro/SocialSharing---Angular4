@@ -15,6 +15,18 @@ export class BlockComponent {
 
   constructor() {}
 
+  buildPath(event, curruntItem) {
+    if(curruntItem.name == "facebook") {
+      console.log(curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link);
+    } else if(curruntItem.name == "linkedin") {
+      console.log(curruntItem.linkGenerator.socialPath + "&url=" + curruntItem.linkGenerator.link + "&title=" + curruntItem.linkGenerator.title + "&summary=" + curruntItem.linkGenerator.description);
+    } else if(curruntItem.name == "twitter") {
+      console.log(curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.description + "&url=" + curruntItem.linkGenerator.link);
+    } else if(curruntItem.name == "pinterest") {
+      console.log(curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link + "&media=" + curruntItem.linkGenerator.image + "&description=" + curruntItem.linkGenerator.description);
+    }
+  }
+
   //Inizializza il componente in modo tale che venga eseguito.
   ngOnInit() {}
 
