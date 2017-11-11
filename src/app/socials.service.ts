@@ -19,7 +19,8 @@ export class SocialService {
           description: null,
           image: null,
           socialPath: "http://www.facebook.com/share.php?u="
-        }
+        },
+        builtPath: ""
       },
       {
         name: "twitter",
@@ -30,7 +31,8 @@ export class SocialService {
           description: "",
           image: null,
           socialPath: "http://twitter.com/share?text="
-        }
+        },
+        builtPath: ""
       },
       {
         name: "pinterest",
@@ -41,7 +43,8 @@ export class SocialService {
           description: "",
           image: "",
           socialPath: "http://pinterest.com/pin/create/button/?url="
-        }
+        },
+        builtPath: ""
       },
       {
         name: "linkedin",
@@ -52,7 +55,8 @@ export class SocialService {
           description: "",
           image: null,
           socialPath: "http://www.linkedin.com/shareArticle?mini=true"
-        }
+        },
+        builtPath: ""
       }
     ];
   };

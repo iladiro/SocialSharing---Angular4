@@ -8,6 +8,7 @@ export class SocialModel {
     image:string;
     socialPath: string;
   };
+  builtPath: string;
 
   //il costruttore serve per costruire l'oggetto, per dargli una forma, utilizzando il modello (che è la classe).
   //tramite l'istruzione new viene inizializzato e gli vengono passati i parametri se esistono
@@ -21,6 +22,7 @@ export class SocialModel {
      image: "",
      socialPath: ""
    };
+   this.builtPath = ""
  };
 
  // setSocialPath(linkValue: string) {

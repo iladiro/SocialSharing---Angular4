@@ -13,19 +13,20 @@ export class BlockComponent {
   // deve contenere un array che rispetti la composizione della classe SocialModel
   @Input() socials: SocialModel;
 
-  constructor() {}
+  constructor() {};
 
-  buildPath(event, curruntItem) {
+  buildPath(curruntItem) {
     if(curruntItem.name == "facebook") {
-      console.log(curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link);
+      curruntItem.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link;
     } else if(curruntItem.name == "linkedin") {
-      console.log(curruntItem.linkGenerator.socialPath + "&url=" + curruntItem.linkGenerator.link + "&title=" + curruntItem.linkGenerator.title + "&summary=" + curruntItem.linkGenerator.description);
+      curruntItem.builtPath = curruntItem.linkGenerator.socialPath + "&url=" + curruntItem.linkGenerator.link + "&title=" + curruntItem.linkGenerator.title + "&summary=" + curruntItem.linkGenerator.description;
     } else if(curruntItem.name == "twitter") {
-      console.log(curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.description + "&url=" + curruntItem.linkGenerator.link);
+      curruntItem.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.description + "&url=" + curruntItem.linkGenerator.link;
     } else if(curruntItem.name == "pinterest") {
-      console.log(curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link + "&media=" + curruntItem.linkGenerator.image + "&description=" + curruntItem.linkGenerator.description);
+      curruntItem.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link + "&media=" + curruntItem.linkGenerator.image + "&description=" + curruntItem.linkGenerator.description;
     }
-  }
+    console.log(this.socials);
+  };
 
   //Inizializza il componente in modo tale che venga eseguito.
   ngOnInit() {}
