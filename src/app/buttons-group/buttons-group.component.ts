@@ -6,7 +6,7 @@ import { SocialModel } from '../social-model';
 @Component({
   selector: 'buttonsGroup',
   templateUrl: './buttons-group.component.html',
-  styleUrls: ['./buttons-group.component.css']
+  styleUrls: ['./buttons-group.component.scss']
 })
 
 export class ButtonsGroupComponent {
