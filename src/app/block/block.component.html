@@ -5,7 +5,7 @@
         {{social.name}}
       </h2>
       <div class="socialBlock__linkGenerator center">
-        <input type="text" [(ngModel)]="social.linkGenerator.link" placeholder="Inserisci link">
+        <input type="url" [(ngModel)]="social.linkGenerator.link" placeholder="Inserisci link">
         <input type="text" [(ngModel)]="social.linkGenerator.title" placeholder="Inserisci title" *ngIf="social.linkGenerator.title !== null">
         <input type="text" [(ngModel)]="social.linkGenerator.description" placeholder="Inserisci description" *ngIf="social.linkGenerator.description !== null">
         <input type="text" [(ngModel)]="social.linkGenerator.image" placeholder="Inserisci image" *ngIf="social.linkGenerator.image !== null">
@@ -13,9 +13,6 @@
       <button (click)="buildPath(social)">Click</button>
       <div class="socialBlock__generatedLink">
         {{social.builtPath}}
-        <!-- <p *ngIf="social.linkGenerator.link.startsWith('http://')">
-          {{social.builtPath}}
-        </p> -->
       </div>
     </div>
   </ng-container>
