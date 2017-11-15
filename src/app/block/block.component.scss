@@ -22,6 +22,7 @@ $googleplus: #4c4b4b;
   @include spaces(0, 0 auto 20px);
   &__name {
     margin: 0;
+    padding: 0;
   }
   &__linkGenerator {
     padding: 15px;
@@ -47,7 +48,6 @@ $googleplus: #4c4b4b;
     &#{$c}--#{$social} {
       #{$c}__name, #{$c}__generatedLink {
         background-color: $color;
-        padding: 15px;
       }
     }
   }

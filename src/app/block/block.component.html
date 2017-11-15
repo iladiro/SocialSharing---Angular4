@@ -1,7 +1,7 @@
 <ng-container *ngFor ="let social of socials">
   <div class="socialBlock socialBlock--{{social.name | lowercase}} col-6" *ngIf="social.show">
     <h2 class="socialBlock__name">
-      {{social.name}}
+      <img src="{{social.logo}}" alt="{{social.name}}" title="{{social.name}}">
     </h2>
     <div class="socialBlock__linkGenerator text-center">
       <div>
