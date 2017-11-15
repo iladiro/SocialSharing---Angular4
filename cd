@@ -1,0 +1,96 @@
+[33mcommit 1d7f0d1eb7111036bb0eb4ca2b00dc76106c9a27[m
+Author:  <iladiro@DESKTOP-9NJILSG.localdomain>
+Date:   Tue Nov 14 17:04:14 2017 +0100
+
+    Replace type=url insteed type=text on input field 'Insert Link'
+
+[33mcommit 0154cd1e1ba4924d81d8b66a919f1b8d9b3689c3[m
+Author:  <iladiro@DESKTOP-9NJILSG.localdomain>
+Date:   Tue Nov 14 16:47:21 2017 +0100
+
+    Add bootstrap framework and sass
+
+[33mcommit 459048fc2f6cf44b840560ea5af8f07edd840e65[m
+Author: Ilaria Di Rosa <dirosa.ilaria@gmail.com>
+Date:   Sun Nov 12 22:49:24 2017 +0100
+
+    Add sass and bootstrap
+
+[33mcommit 033afa6458555118546b76db3123a63fbf334f99[m
+Merge: f67e711 e231e8b
+Author: Ilaria Di Rosa <dirosa.ilaria@gmail.com>
+Date:   Sat Nov 11 19:48:07 2017 +0100
+
+    Mrge remote version
+
+[33mcommit e231e8b1022ba114bbd93f305fae2a8b12b114f7[m
+Author: ilaria di rosa <dirosa.ilaria@gmail.com>
+Date:   Sat Nov 11 19:41:27 2017 +0100
+
+    Initial commit
+
+[33mcommit f67e711f3282df3cd67ede138098bbfde5289cfc[m
+Author: Ilaria Di Rosa <dirosa.ilaria@gmail.com>
+Date:   Sat Nov 11 19:38:21 2017 +0100
+
+    Done: got values, passed object at the function, built the string and made bind by the model
+
+[33mcommit c6021b91b281451d0ac28346278f09846478061f[m
+Author: Ilaria Di Rosa <dirosa.ilaria@gmail.com>
+Date:   Wed Nov 8 17:07:55 2017 +0100
+
+    Implement buildPath function
+
+[33mcommit eaa82635e0f30fb687e2f3570fa090313e529bce[m
+Author: Ilaria Di Rosa <dirosa.ilaria@gmail.com>
+Date:   Mon Nov 6 17:17:33 2017 +0100
+
+    ok
+
+[33mcommit 878876ab9575eef63f2c2643fd039d72ea8beff0[m
+Author: Ilaria Di Rosa <dirosa.ilaria@gmail.com>
+Date:   Mon Nov 6 15:10:31 2017 +0100
+
+    Add others input on block component with conditions if
+
+[33mcommit 463445a06cd455ba0fc3360e21a04f4cf09fa890[m
+Author: Ilaria Di Rosa <dirosa.ilaria@gmail.com>
+Date:   Mon Nov 6 15:04:23 2017 +0100
+
+    Add linkGenerator attributes
+
+[33mcommit 9590cfa49c4a536201346f4bb8190ab8f649ae74[m
+Author: Ilaria Di Rosa <dirosa.ilaria@gmail.com>
+Date:   Mon Nov 6 10:27:47 2017 +0100
+
+    Init on my mac
+
+[33mcommit c17ebd8a9e952f7b599915ca6a716e27d3130cfc[m
+Author: Ilaria Di Rosa <ilaria.dirosa@thinkopen.it>
+Date:   Mon Oct 30 20:53:02 2017 +0100
+
+    Fix something
+
+[33mcommit 2a948c23c0abdf93d160ec297e9c99b6c58c2075[m
+Author: Ilaria Di Rosa <ilaria.dirosa@thinkopen.it>
+Date:   Mon Oct 30 17:56:39 2017 +0100
+
+    Implement function show/hide of block.component on buttons
+
+[33mcommit 04969cdfe4d7bef73e0e95d431ce0c2ecf2c27dc[m
+Author: Ilaria Di Rosa <ilaria.dirosa@thinkopen.it>
+Date:   Mon Oct 30 17:17:28 2017 +0100
+
+    Implement SocialService
+
+[33mcommit 2dfb7c264819eec6676d0d418c39aa1281a52ba9[m
+Author: Ilaria Di Rosa <ilaria.dirosa@thinkopen.it>
+Date:   Mon Oct 30 12:51:47 2017 +0100
+
+    prova
+
+[33mcommit fa7e261e3147a065f959d9c94fb0e66df3ce7e16[m
+Author: angular-cli <angular-cli@angular.io>
+Date:   Fri Oct 27 13:17:01 2017 +0200
+
+    chore: initial commit from angular-cli

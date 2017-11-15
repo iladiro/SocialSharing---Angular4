@@ -1,5 +1,7 @@
+@import "../../assets/stylesheet/mixin/custom-mixin";
+@import '../../assets/stylesheet/variables';
+
 .socialButtons {
-  position:absolute;
-  top: 0;
-  left: 0;
+  @include position(left, 0, top, 0);
+  padding: 0;
 }
