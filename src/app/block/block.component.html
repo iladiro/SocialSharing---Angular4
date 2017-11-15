@@ -13,7 +13,14 @@
       <button (click)="buildPath(social)" class="btn btn-primary">Generated social link</button>
     </div>
     <div class="socialBlock__generatedLink">
-      <p>{{social.builtPath}}</p>
+      <p>
+        <span *ngIf="social.linkGenerator.link.startsWith('http://')">
+          {{social.builtPath}}
+        </span>
+      </p>
     </div>
   </div>
 </ng-container>
+<!-- <p *ngIf="social.linkGenerator.link.startsWith('http://')">
+ -          {{social.builtPath}}
+ -        </p> -->

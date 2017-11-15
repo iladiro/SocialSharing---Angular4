@@ -5,11 +5,6 @@
 
 .socialBlock {
   $c: &;
-  $socials: (twitter, $twitter),
-          (facebook, $facebook),
-          (googleplus, $googleplus),
-          (pinterest, $pinterest),
-          (linkedin, $linkedin);
   display: block;
   background-color: #f2f3f7;
   @include spaces(0, 0 auto 20px);
