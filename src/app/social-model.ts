@@ -1,5 +1,6 @@
 export class SocialModel {
   name: string;
+  //logo: string;
   show: boolean;
   linkGenerator: {
     link: string;
@@ -14,6 +15,7 @@ export class SocialModel {
   //tramite l'istruzione new viene inizializzato e gli vengono passati i parametri se esistono
  constructor(name:string, show:boolean = false) {
    this.name = name;
+   //this.logo = "";
    this.show = show;
    this.linkGenerator = {
      link: "",

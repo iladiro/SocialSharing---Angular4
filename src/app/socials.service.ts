@@ -12,6 +12,7 @@ export class SocialService {
     this.socialsList = [
       {
         name: "facebook",
+        //logo: "../assets/images/icons/facebook.png",
         show: true,
         linkGenerator: {
           link: "",
@@ -24,6 +25,7 @@ export class SocialService {
       },
       {
         name: "twitter",
+        //logo: "../assets/images/icons/twitter.png",
         show: false,
         linkGenerator: {
           link: "",
@@ -36,6 +38,7 @@ export class SocialService {
       },
       {
         name: "pinterest",
+        //logo: "../assets/images/icons/pinterest.png",
         show: false,
         linkGenerator: {
           link: "",
@@ -48,6 +51,7 @@ export class SocialService {
       },
       {
         name: "linkedin",
+        //logo: "../assets/images/icons/linkedin.png",
         show: false,
         linkGenerator: {
           link: "",

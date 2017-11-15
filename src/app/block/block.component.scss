@@ -18,17 +18,17 @@ $googleplus: #4c4b4b;
           (pinterest, $pinterest),
           (linkedin, $linkedin);
   display: block;
-  background-color: white;
+  background-color: #f2f3f7;
   @include spaces(0, 0 auto 20px);
   &__name {
     margin: 0;
   }
   &__linkGenerator {
     padding: 15px;
-    background-color: white;
     input {
       width: 100%;
-      padding: 5px;
+      @include spaces(5px, 0 0 7px);
+      @include border(1px, #ccd4e4);
     }
     button {
       margin-top: 10px;
@@ -39,7 +39,7 @@ $googleplus: #4c4b4b;
     & > p {
       @include size(100%, 50px);
       background-color: white;
-      @include border(3px, grey);
+      @include border(4px, #ccd4e4);
       @include spaces(10px, 0);
     }
   }
