@@ -4,17 +4,24 @@
       <img src="{{social.logo}}" alt="{{social.name}}" title="{{social.name}}">
     </h2>
     <div class="socialBlock__linkGenerator text-center">
+      <!-- validation errors -->
+      <div *ngIf="urlValue.invalid && (urlValue.dirty || urlValue.touched)" class="alert alert-danger">
+        <div *ngIf="urlValue.errors.required">
+          Name is required.
+        </div>
+      </div>
+      <!-- end -->
       <div>
-        <input type="url" [(ngModel)]="social.linkGenerator.link" placeholder="Insert link">
-        <input type="text" [(ngModel)]="social.linkGenerator.title" placeholder="Insert title" *ngIf="social.linkGenerator.title !== null">
-        <input type="text" [(ngModel)]="social.linkGenerator.description" placeholder="Insert description" *ngIf="social.linkGenerator.description !== null">
-        <input type="text" [(ngModel)]="social.linkGenerator.image" placeholder="Insert image" *ngIf="social.linkGenerator.image !== null">
+        <input type="url" [(ngModel)]="social.linkGenerator.url" #urlValue="ngModel" placeholder="Insert link" value="" class="form-control" required pattern="[A-Za-z0-9]">
+        <input type="text" [(ngModel)]="social.linkGenerator.title" placeholder="Insert title" *ngIf="social.linkGenerator.title !== null" class="form-control" required>
+        <input type="text" [(ngModel)]="social.linkGenerator.description" placeholder="Insert description" *ngIf="social.linkGenerator.description !== null" class="form-control" required>
+        <input type="text" [(ngModel)]="social.linkGenerator.image" placeholder="Insert image" *ngIf="social.linkGenerator.image !== null" class="form-control" required>
       </div>
       <button (click)="buildPath(social)" class="btn btn-primary">Generated social link</button>
     </div>
     <div class="socialBlock__generatedLink">
       <p>
-        <span *ngIf="social.linkGenerator.link.startsWith('http://')">
+        <span *ngIf="social.linkGenerator.url.startsWith('http://')">
           {{social.linkGenerator.builtPath}}
         </span>
       </p>

@@ -15,7 +15,7 @@ export class SocialService {
         logo: "../assets/images/icons/facebook.png",
         show: true,
         linkGenerator: {
-          link: "",
+          url: "",
           title: null,
           description: null,
           image: null,
@@ -28,7 +28,7 @@ export class SocialService {
         logo: "../assets/images/icons/twitter.png",
         show: false,
         linkGenerator: {
-          link: "",
+          url: "",
           title: null,
           description: "",
           image: null,
@@ -41,7 +41,7 @@ export class SocialService {
         logo: "../assets/images/icons/pinterest.png",
         show: false,
         linkGenerator: {
-          link: "",
+          url: "",
           title: null,
           description: "",
           image: "",
@@ -54,7 +54,7 @@ export class SocialService {
         logo: "../assets/images/icons/linkedin.png",
         show: false,
         linkGenerator: {
-          link: "",
+          url: "",
           title: "",
           description: "",
           image: null,

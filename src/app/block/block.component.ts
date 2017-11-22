@@ -16,6 +16,7 @@ export class BlockComponent {
   constructor() {};
 
   buildPath(curruntItem) {
+    console.log(curruntItem)
     if(curruntItem.name == "facebook") {
       curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link;
     } else if(curruntItem.name == "linkedin") {
@@ -25,7 +26,6 @@ export class BlockComponent {
     } else if(curruntItem.name == "pinterest") {
       curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link + "&media=" + curruntItem.linkGenerator.image + "&description=" + curruntItem.linkGenerator.description;
     }
-    console.log(this.socials);
   };
 
   //Inizializza il componente in modo tale che venga eseguito.

@@ -3,7 +3,7 @@ export class SocialModel {
   logo: string;
   show: boolean;
   linkGenerator: {
-    link: string;
+    url: string;
     title:string;
     description:string;
     image:string;
@@ -18,7 +18,7 @@ export class SocialModel {
    this.logo = "";
    this.show = show;
    this.linkGenerator = {
-     link: "",
+     url: "",
      title: "",
      description: "",
      image: "",
