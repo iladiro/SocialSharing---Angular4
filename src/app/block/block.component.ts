@@ -17,13 +17,13 @@ export class BlockComponent {
 
   buildPath(curruntItem) {
     if(curruntItem.name == "facebook") {
-      curruntItem.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link;
+      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link;
     } else if(curruntItem.name == "linkedin") {
-      curruntItem.builtPath = curruntItem.linkGenerator.socialPath + "&url=" + curruntItem.linkGenerator.link + "&title=" + curruntItem.linkGenerator.title + "&summary=" + curruntItem.linkGenerator.description;
+      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + "&url=" + curruntItem.linkGenerator.link + "&title=" + curruntItem.linkGenerator.title + "&summary=" + curruntItem.linkGenerator.description;
     } else if(curruntItem.name == "twitter") {
-      curruntItem.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.description + "&url=" + curruntItem.linkGenerator.link;
+      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.description + "&url=" + curruntItem.linkGenerator.link;
     } else if(curruntItem.name == "pinterest") {
-      curruntItem.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link + "&media=" + curruntItem.linkGenerator.image + "&description=" + curruntItem.linkGenerator.description;
+      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link + "&media=" + curruntItem.linkGenerator.image + "&description=" + curruntItem.linkGenerator.description;
     }
     console.log(this.socials);
   };

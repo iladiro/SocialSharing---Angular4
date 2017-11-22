@@ -15,12 +15,9 @@
     <div class="socialBlock__generatedLink">
       <p>
         <span *ngIf="social.linkGenerator.link.startsWith('http://')">
-          {{social.builtPath}}
+          {{social.linkGenerator.builtPath}}
         </span>
       </p>
     </div>
   </div>
 </ng-container>
-<!-- <p *ngIf="social.linkGenerator.link.startsWith('http://')">
- -          {{social.builtPath}}
- -        </p> -->
