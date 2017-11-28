@@ -5,9 +5,39 @@
 body {
   @include size(100%, 100%);
   background-color: #97ccd4;
-  padding: 30px;
+  @include spaces(0, 0);
 }
 
 *, ::after, ::before {
   box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.btn {
+  $buttons: (success, #67cb4d),
+          (warning, #f43535);
+  border: 0;
+  padding: 10px 15px;
+  &--radius {
+    border-radius: 4px;
+  }
+  @each $button, $color in $buttons {
+    &--#{$button} {
+      background-color: $color;
+      @include transition(all 0.2s ease-in);
+      cursor: pointer;
+      color: white;
+      &:hover {
+        background-color: darken($color, 10%);
+      }
+    }
+  }
 }

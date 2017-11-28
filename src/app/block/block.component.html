@@ -1,17 +1,15 @@
 <ng-container *ngFor ="let social of socials">
-  <div class="socialBlock socialBlock--{{social.name | lowercase}} col-6" *ngIf="social.show">
+  <div class="socialBlock socialBlock--{{social.name | lowercase}}" *ngIf="social.show">
     <h2 class="socialBlock__name">
       <img src="{{social.logo}}" alt="{{social.name}}" title="{{social.name}}">
     </h2>
-    <div class="socialBlock__linkGenerator text-center">
-      <form (ngSubmit)="buildPath(social)">
-        <input type="url" [(ngModel)]="social.linkGenerator.url" name="url" placeholder="Insert url" value="" class="form-control" required>
-        <input type="text" [(ngModel)]="social.linkGenerator.title" name="title" placeholder="Insert title" *ngIf="social.linkGenerator.title !== null" class="form-control" required>
-        <input type="text" [(ngModel)]="social.linkGenerator.description" name="description" value="" placeholder="Insert description" *ngIf="social.linkGenerator.description !== null" class="form-control" required>
-        <input type="text" [(ngModel)]="social.linkGenerator.image" name="image" placeholder="Insert image" *ngIf="social.linkGenerator.image !== null" class="form-control" required pattern="(http|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*)+\.(jpg|gif|png)">
-        <button type="submit" class="btn btn-success">Build link</button>
-      </form>
-    </div>
+    <form (ngSubmit)="buildPath(social)" class="socialBlock__linkGenerator text-center">
+      <input type="url" [(ngModel)]="social.linkGenerator.url" name="url" placeholder="Insert url" value="" class="form-control" required>
+      <input type="text" [(ngModel)]="social.linkGenerator.title" name="title" placeholder="Insert title" *ngIf="social.linkGenerator.title !== null" class="form-control" required>
+      <input type="text" [(ngModel)]="social.linkGenerator.description" name="description" value="" placeholder="Insert description" *ngIf="social.linkGenerator.description !== null" class="form-control" required>
+      <input type="text" [(ngModel)]="social.linkGenerator.image" name="image" placeholder="Insert image" *ngIf="social.linkGenerator.image !== null" class="form-control" required pattern="(http|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*)+\.(jpg|gif|png)">
+      <button type="submit" class="btn btn--radius btn--success">Build link</button>
+    </form>
     <div class="socialBlock__generatedLink">
       <p>
         {{social.linkGenerator.builtPath}}

@@ -14,11 +14,13 @@
     padding: 0;
   }
   &__linkGenerator {
-    padding: 15px;
+    padding: 30px 15px;
     input {
       width: 100%;
-      @include spaces(5px, 0 0 7px);
+      @include spaces(10px, 0 0 7px);
       @include border(1px, #ccd4e4);
+      border-radius: 4px;
+      background-color: white;
     }
     button {
       margin-top: 10px;
