@@ -1,4 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {
+    ReactiveFormsModule,
+    FormsModule,
+    FormGroup,
+    FormControl,
+    Validators,
+    FormBuilder
+} from '@angular/forms';
 import { SocialModel } from '../social-model';
 
 @Component({
@@ -16,15 +24,16 @@ export class BlockComponent {
   constructor() {};
 
   buildPath(curruntItem) {
-    console.log(curruntItem)
     if(curruntItem.name == "facebook") {
-      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link;
+      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + "?u=" + curruntItem.linkGenerator.url;
     } else if(curruntItem.name == "linkedin") {
-      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + "&url=" + curruntItem.linkGenerator.link + "&title=" + curruntItem.linkGenerator.title + "&summary=" + curruntItem.linkGenerator.description;
+      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + "?mini=true" + "&url=" + curruntItem.linkGenerator.url + "&title=" + curruntItem.linkGenerator.title + "&summary=" + curruntItem.linkGenerator.description;
     } else if(curruntItem.name == "twitter") {
-      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.description + "&url=" + curruntItem.linkGenerator.link;
+      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + "?text=" + curruntItem.linkGenerator.description + "&url=" + curruntItem.linkGenerator.url;
     } else if(curruntItem.name == "pinterest") {
-      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + curruntItem.linkGenerator.link + "&media=" + curruntItem.linkGenerator.image + "&description=" + curruntItem.linkGenerator.description;
+      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + "?url=" + curruntItem.linkGenerator.url + "&media=" + curruntItem.linkGenerator.image + "&description=" + curruntItem.linkGenerator.description;
+    } else if(curruntItem.name == "google-plus") {
+      curruntItem.linkGenerator.builtPath = curruntItem.linkGenerator.socialPath + "?url=" + curruntItem.linkGenerator.url + "&media=" + curruntItem.linkGenerator.image + "&description=" + curruntItem.linkGenerator.description;
     }
   };
 

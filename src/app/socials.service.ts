@@ -19,7 +19,7 @@ export class SocialService {
           title: null,
           description: null,
           image: null,
-          socialPath: "http://www.facebook.com/share.php?u=",
+          socialPath: "http://www.facebook.com/share.php",
           builtPath: ""
         }
       },
@@ -32,7 +32,7 @@ export class SocialService {
           title: null,
           description: "",
           image: null,
-          socialPath: "http://twitter.com/share?text=",
+          socialPath: "http://twitter.com/share",
           builtPath: ""
         }
       },
@@ -45,7 +45,7 @@ export class SocialService {
           title: null,
           description: "",
           image: "",
-          socialPath: "http://pinterest.com/pin/create/button/?url=",
+          socialPath: "http://pinterest.com/pin/create/button/",
           builtPath: ""
         }
       },
@@ -58,10 +58,23 @@ export class SocialService {
           title: "",
           description: "",
           image: null,
-          socialPath: "http://www.linkedin.com/shareArticle?mini=true",
+          socialPath: "http://www.linkedin.com/shareArticle",
           builtPath: ""
         }
-      }
+      },
+      {
+        name: "google-plus",
+        logo: "../assets/images/icons/googleplus.png",
+        show: false,
+        linkGenerator: {
+          url: "",
+          title: null,
+          description: "",
+          image: "",
+          socialPath: "http://pinterest.com/pin/create/button/",
+          builtPath: ""
+        }
+      },
     ];
   };
 
